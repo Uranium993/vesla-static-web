@@ -1,0 +1,77 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 1);
+  animation: myAnime 2s ease-in;
+  opacity: 0.9;
+
+  .header__inner {
+    display: flex;
+    padding: 0.5rem 25px;
+    opacity: 0;
+
+    align-items: center;
+    min-height: 6rem;
+    animation: popup 1s ease-in-out forwards;
+    animation-delay: 2s;
+    .header__logo {
+      color: white;
+    }
+
+    .header__button {
+      position: relative;
+      width: 45px;
+      height: 40px;
+      background: url("/images/menu-white.png");
+      cursor: pointer;
+      background-size: 60px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 1rem;
+    }
+
+    .header__actions {
+      display: flex;
+      margin-left: auto;
+
+      a {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-right: solid black;
+        padding-right: 2rem;
+        color: rgb(200, 137, 54);
+      }
+    }
+  }
+}
+
+.header__button {
+  background-image: url("/images/menu-white.png");
+  background-size: 40px;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes myAnime {
+  0% {
+    transform: translateX(-1920px);
+  }
+
+  100% {
+    transform: translateX();
+  }
+}

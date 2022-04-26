@@ -1,0 +1,33 @@
+.showcase {
+  box-sizing: border-box;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  //padding: 56.25% 0 0 0; /* 100%/16*9 = 56.25% = Aspect ratio 16:9 */
+  overflow: hidden;
+  //border: 0;
+  z-index: -2;
+
+  // video {
+  //   position: absolute;
+  //   width: 100%;
+  //   min-height: 100vh;
+  //   top: 0;
+  //   left: 0;
+  //   object-fit: cover;
+  //   opacity: 1;
+  //   filter: grayscale(50%);
+  //   animation: videoAnime 5s;
+  // }
+}
+
+@keyframes videoAnime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

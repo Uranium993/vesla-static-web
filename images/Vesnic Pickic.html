@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesnic Pickic</title>
+    <link rel="stylesheet" href="Vesnic%20Pickic_files/styles.css">
+  </head>
+  <body>
+    <div class="landing">
+      <div class="background-image"></div>
+
+      <div class="header">
+        <div class="header__inner">
+          <a class="header__logo">OVDE LOGO</a>
+          <div class="header__actions">
+            <a href="#about" class="header__link">BIOGRAFIJA</a>
+            <a href="#" class="header__link">PROJEKTI</a>
+            <a href="#contact" class="header__link">KONTAKT</a>
+            <!-- <div id="menu-btn" class="header__button"></div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card logo--hide">
+        <div class="card__content">
+          <div class="card__front">
+            <h3 class="card__title">_Architecture_</h3>
+            <p class="card__subtitle">V</p>
+          </div>
+          <div class="card__back">
+            <p class="card__body1">and</p>
+            <p class="card__body">_INTERIORS_</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="mainMenu">
+      <div class="mainMenu__inner">
+        <div class="mainMenu__header">
+          <div class="mainMenu__headerLogo">LOGO</div>
+          <div class="mainMenu__headerClose"></div>
+        </div>
+        <div class="mainMenu__content container">
+          <div class="mainMenu__contentMenu">
+            <ul class="mainMenu__nav">
+              <li class="mainMenu__navItem"><a href="#">Dobro dosli!</a></li>
+              <li class="mainMenu__navItem"><a href="#">Projekti</a></li>
+              <li class="mainMenu__navItem"><a href="#">Usluge</a></li>
+              <li class="mainMenu__navItem"><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="mainMenu__contentSocials">
+            <h4>Find us here:</h4>
+            <ul class="mainMenu__socials">
+              <li class="mainMenu__socialitem">Instagram</li>
+              <li class="mainMenu__socialitem">Facebook</li>
+              <li class="mainMenu__socialitem">Linkedin</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="sections">
+      <section id="about" class="section__about">
+        <!-- <div>jebo ga dan</div>
+        <h3>O meni</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo modi
+          quam a. Error libero vel similique animi, veritatis mollitia quidem
+          distinctio molestias eligendi possimus eum dolores itaque, nemo eius
+          pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Nemo modi quam a. Error libero vel similique animi, veritatis mollitia
+          quidem distinctio molestias eligendi possimus eum dolores itaque, nemo
+          eius pariatur.
+        </p> -->
+      </section>
+      <section id="gallery" class="section__gallery">
+        <div class="image_grid">
+          <img src="Vesnic%20Pickic_files/gal1-arch.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/gal1.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/gal2-arch.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/gal2.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/gal3.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/gal4.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/gal5.jpg" alt="" srcset="">
+          <img src="Vesnic%20Pickic_files/Interior-Design.jpg" alt="" srcset="">
+        </div>
+      </section>
+      <section id="contact" class="section__contact" style="font-size: 13px;height: 100vh;">
+        <div class="office__pic">
+          <!-- <img src="./images/minimal-office" alt="" srcset="" /> -->
+        </div>
+        <div>KONTAKT</div>
+      </section>
+    </div>
+
+    <div class="footer">
+      <div class="start_button">
+        <div class="icon_down"></div>
+
+        <p>ZAPOCNITE</p>
+      </div>
+    </div>
+    <script src="Vesnic%20Pickic_files/app.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

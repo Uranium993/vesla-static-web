@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400");
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --clr: #333;
+}
+
+.card {
+  position: relative;
+  top: 20%;
+  left: 65%;
+  width: 400px;
+  box-shadow: 0 5px 15px 10px rgb(223, 223, 219);
+  //box-shadow: -3px 5px 15px 10px rgb(219, 210, 210);
+  transition: 1s;
+  //background: rgba(255, 255, 255, 0.5);
+  animation: popup-logo forwards;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px 10px rgb(160, 157, 157);
+  cursor: pointer;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  padding: 15em 5em;
+  transition: transform 3s;
+
+  transform-style: preserve-3d;
+}
+
+.card .card__content {
+  //transform: rotateY(0.5turn);
+  animation-name: myanime;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-delay: 3.5s;
+  animation-timing-function: cubic-bezier(0.1, 1, 0, 1);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color: transparent;
+
+  //background-color: var(--clr);
+  background-image: url("../images/Untitled.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  //background-blend-mode: overlay;
+  color: #333;
+  backface-visibility: hidden;
+}
+
+// .card__front::before {
+//   content: "";
+//   position: absolute;
+//   --spacer: 1em;
+//   top: var(--spacer);
+//   bottom: var(--spacer);
+//   left: var(--spacer);
+//   right: var(--spacer);
+//   border: 3px solid currentColor;
+//   transform: var(--level-one);
+// }
+
+.card__title {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 5rem;
+  font-weight: var(--fw-bold);
+  opacity: 0.7;
+  backface-visibility: hidden;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 2rem;
+  line-height: 1.6;
+  backface-visibility: hidden;
+  color: #333;
+}
+
+.card__body1 {
+  transform: var(--level-one);
+  font-weight: var(fw-normal);
+  font-size: 2rem;
+  line-height: 1.6;
+  backface-visibility: hidden;
+  color: #333;
+}
+
+.card__back {
+  transform: rotateY(0.5turn);
+  //color: var(--clr);
+  background: #333;
+  background-image: url("../images/Untitled.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+@keyframes popup-logo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes myanime {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(0.5turn);
+  }
+
+  100% {
+    transform: rotateY(1turn);
+  }
+}

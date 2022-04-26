@@ -1,0 +1,56 @@
+.section__about {
+  height: 86vh;
+  width: 100%;
+  background-image: url(../images/bio-test.webp);
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+.section__gallery {
+  height: 100vh;
+  margin-bottom: 2rem;
+  .image_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.section__contact {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+
+  h1 h2 h3 {
+    color: white;
+  }
+
+  //   .center {
+  //     width: 50%;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //     display: block;
+  //   }
+  // }
+  .office__pic {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    background-color: black;
+    background-image: url("../images/minimal-office2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
