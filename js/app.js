@@ -21,6 +21,7 @@ document.addEventListener("scroll", function () {
   if (window.scrollY > 1) {
     footer.classList.add("footer--hide");
     card.classList.add("logo--hide");
+    console.log("scrolled");
     headerPopup.classList.add("header__inner__popup");
   } else if (
     window.innerHeight + window.scrollY >=
