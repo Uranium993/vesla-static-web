@@ -14,12 +14,12 @@
 .card {
   position: relative;
   top: 20%;
-  left: 65%;
+  left: 40%;
   width: 400px;
   box-shadow: 0 5px 15px 10px rgb(223, 223, 219);
   //box-shadow: -3px 5px 15px 10px rgb(219, 210, 210);
   transition: 1s;
-  //background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   animation: popup-logo forwards;
   opacity: 0;
   animation-duration: 2s;

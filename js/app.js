@@ -3,6 +3,7 @@
 
 const footer = document.querySelector(".footer");
 const card = document.querySelector(".card");
+const headerPopup = document.querySelector(".header__inner");
 
 // menuBtn.addEventListener('click', function(){
 //     menu.classList.toggle('mainMenu--active')
@@ -20,6 +21,7 @@ document.addEventListener("scroll", function () {
   if (window.scrollY > 1) {
     footer.classList.add("footer--hide");
     card.classList.add("logo--hide");
+    headerPopup.classList.add("header__inner__popup");
   } else if (
     window.innerHeight + window.scrollY >=
     document.body.scrollHeight

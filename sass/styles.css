@@ -17,10 +17,6 @@
   opacity: 0;
   align-items: center;
   min-height: 6rem;
-  -webkit-animation: popup 1s ease-in-out forwards;
-          animation: popup 1s ease-in-out forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 .header .header__inner .header__logo {
   color: white;
@@ -49,6 +45,11 @@
   border-right: solid black;
   padding-right: 2rem;
   color: rgb(200, 137, 54);
+}
+
+.header__inner__popup {
+  -webkit-animation: popup 1s ease-in-out forwards;
+          animation: popup 1s ease-in-out forwards;
 }
 
 .header__button {
@@ -148,10 +149,11 @@
 .card {
   position: relative;
   top: 20%;
-  left: 65%;
+  left: 40%;
   width: 400px;
   box-shadow: 0 5px 15px 10px rgb(223, 223, 219);
   transition: 1s;
+  background: rgba(255, 255, 255, 0.3);
   -webkit-animation: popup-logo forwards;
           animation: popup-logo forwards;
   opacity: 0;
